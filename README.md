@@ -8,8 +8,9 @@ Using the model [phi4-multimodal](https://huggingface.co/microsoft/Phi-4-multimo
 
 ## ⚙️ Setup
 
-This project will be developed and run in Google colab to use the T4 and A100 GPUs
-In particular I will use the T4 Gpus for only inference notebooks, like: Baseline and data analysis
+This project is being developed and run in Google colab to use the T4 and A100 GPUs.
+
+In particular, I will use the T4 Gpus for only inference notebooks: Baseline and data analysis.
 The A100 GPUs are used for finetune
 
 
