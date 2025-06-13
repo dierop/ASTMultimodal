@@ -24,3 +24,17 @@ The A100 GPUs are used for finetune
 
 - _transcription_baseline_: First transcription using presegmented phrases.
     - Test: WER 13.86%, CER 7.19%
+
+- _esp_trad_baseline_: First traduction to spanish. 0 Shot
+    - Test: Bleu: 11.61, comet22 : 0.68
+
+
+
+
+## Notas personales
+
+### Version transformers
+
+- Inicialmente usando 4.47 porque en pruebas previas (fine-tune) me habia dado problemas (no seguro de que sea necesario)
+- Versiones incomatibles con comet/bleu: 4.47 y 4.53
+- Vesiones compatibles: 4.48 y 4.49 (4.49 necesita incluir en generate logits=0)
