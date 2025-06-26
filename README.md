@@ -28,6 +28,13 @@ The A100 GPUs are used for finetune
 - _esp_trad_baseline_: First traduction to spanish. 0 Shot
     - Test: Bleu: 11.61, comet22 : 0.68
 
+- _esp_cot_baseline_: Traduction to spanish using chain of thougths. 0 Shot
+    - Test: Bleu: 25.75, comet22 : 0.76
+
+
+### Finetune
+ - _lora_esp_base_: First basic finetunning
+    - Test: BLEU: 10.95, COMET-22: 0.674
 
 
 
