@@ -33,12 +33,17 @@ The A100 GPUs are used for finetune
 
 
 ### Finetune
- - _lora_esp_base_: First basic finetunning
+ - _lora_esp_base_: First basic finetunning with Query and Keys projections
     - Test: BLEU: 10.95, COMET-22: 0.674
 
  - _lora_esp_validacion_: Add validation 
     - Test: BLEU: 17.30, COMET-22: 0.7028
 
+ - _lora_esp_full_attention_: Finetune over full attention projections 
+    - Test: BLEU: 21.48, COMET-22: 0.7236
+
+ - _lora_esp_cot_: Finetune using CoT
+    - Test: BLEU: 37.49, COMET-22: 0.8080
 
 
 ## Notas personales
