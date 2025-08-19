@@ -20,16 +20,24 @@ The A100 GPUs are used for finetune
 
 - _data_exploration_: First exploration to open the data. I created two small zips for dev and test to use in the later experiments
 
+- _images_to_text_: Create descriptions of the slides for later ussage. the description created follow a structured order.
+
 ### Baseline
 
 - _transcription_baseline_: First transcription using presegmented phrases.
     - Test: WER 13.86%, CER 7.19%
 
-- _esp_trad_baseline_: First traduction to spanish. 0 Shot
+- _esp_trad_baseline_: First translation to spanish. 0 Shot
     - Test: Bleu: 11.61, comet22 : 0.68
 
-- _esp_cot_baseline_: Traduction to spanish using chain of thougths. 0 Shot
+- _esp_cot_baseline_: Translation to spanish using chain of thougths. 0 Shot
     - Test: Bleu: 25.75, comet22 : 0.76
+
+- _esp_image_text_baseline: Translation using the description of the slides to help. 0 Shot
+    - Test: Bleu: 0.17, comet22 : 0.22
+
+- _esp_image_baseline: Translation using slides as context. 0 Shot
+    - Test: Bleu: 4.86, comet22 : 0.60
 
 
 ### Finetune
@@ -44,6 +52,12 @@ The A100 GPUs are used for finetune
 
  - _lora_esp_cot_: Finetune using CoT
     - Test: BLEU: 37.49, COMET-22: 0.8080
+
+ - _lora_esp_images_: Finetune using slides as context
+    - Test: BLEU: 9.84, COMET-22: 0.7155
+
+ - _lora_esp_images_: Finetune using slides as context
+    - Test: BLEU: 20.87, COMET-22: 0.6869
 
 
 ## Notas personales
