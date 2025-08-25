@@ -28,16 +28,16 @@ The A100 GPUs are used for finetune
     - Test: WER 13.86%, CER 7.19%
 
 - _esp_trad_baseline_: First translation to spanish. 0 Shot
-    - Test: Bleu: 11.61, comet22 : 0.68
+    - Test: Bleu: 11.61, comet22 : 0.683
 
 - _esp_cot_baseline_: Translation to spanish using chain of thougths. 0 Shot
-    - Test: Bleu: 25.75, comet22 : 0.76
+    - Test: Bleu: 25.75, comet22 : 0.762
 
 - _esp_image_text_baseline: Translation using the description of the slides to help. 0 Shot
-    - Test: Bleu: 0.17, comet22 : 0.22
+    - Test: Bleu: 0.17, comet22 : 0.220
 
 - _esp_image_baseline: Translation using slides as context. 0 Shot
-    - Test: Bleu: 4.86, comet22 : 0.60
+    - Test: Bleu: 4.86, comet22 : 0.601
 
 
 ### Finetune
@@ -53,10 +53,15 @@ The A100 GPUs are used for finetune
  - _lora_esp_cot_: Finetune using CoT
     - Test: BLEU: 37.49, COMET-22: 0.8080
 
+    -__FUll ATT__  BLEU  : 37.34, COMET-22 : 0.8037
+    -__AUDIO_LAyer__ BLEU : 37.31, COMET-22 : 0.8065
+    -__Batch 48__ BLEU : 39.46, COMET-22 : 0.8073
+    -__r4_alpha16__ BLEU : 36.50, COMET-22 : 0.8018
+
  - _lora_esp_images_: Finetune using slides as context
     - Test: BLEU: 9.84, COMET-22: 0.7155
 
- - _lora_esp_images_: Finetune using slides as context
+ - _lora_esp_images_text: Finetune using slides as context
     - Test: BLEU: 20.87, COMET-22: 0.6869
 
 
